@@ -18,15 +18,6 @@ I am a part-time overthinker, accidental researcher, deadline-powered human, ful
 - Human-AI Interaction
 - Computer Graphics
 
-## Education
-
-**Peking University**, Beijing, China  
-Master of Software Engineering, Sep 2024 – Jul 2027  
-Rank: 24/279, Top 10%
-
-**Beijing University of Chemical Technology**, Beijing, China  
-Bachelor of Digital Media Art, Sep 2020 – Jul 2024  
-Rank: 1/30, direct admission to Peking University
 
 ## Contact
 
