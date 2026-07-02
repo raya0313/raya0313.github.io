@@ -16,6 +16,7 @@ I am a part-time overthinker, accidental researcher, deadline-powered human, ful
 
 - Extended Reality, including VR, AR, and MR
 - Human-AI Interaction
+- Accessibility and Assistive Technologies
 - Computer Vision
 
 
