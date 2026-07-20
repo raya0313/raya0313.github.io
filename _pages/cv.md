@@ -1,8 +1,10 @@
 ---
 layout: single
 permalink: /cv/
-title: "CV"
+title: "Curriculum Vitae"
 author_profile: true
 ---
 
-You can download my CV [here](/files/cv.pdf?v=20260712-2326).
+You can download my latest CV: [Xinru Cheng — Curriculum Vitae](/files/cv.pdf?v=20260720).
+
+_Last updated: July 20, 2026._
