@@ -1,0 +1,99 @@
+/* ==========================================================================
+  RAYA GREEN THEME - DARK VERSION
+  Minimal dark-mode companion for the existing Academic Pages layout.
+  ========================================================================== */
+
+/* Color codes used for the theme */
+$primary-color              : #8fbea5;
+$background                 : #101c18;
+$background-light           : #17251f;
+$background-lighter         : #1d2f27;
+$text                       : #e4efe8;
+$text-muted                 : #b5c7bd;
+$link                       : #9ed2b5;
+$link-dark                  : #c8ead7;
+$link-light                 : #76b492;
+$footer                     : #14251e;
+$border                     : #2b4639;
+$border-light               : #426852;
+
+/* Color codes used for the site */
+$danger-color               : #e08b7f;
+$info-color                 : #9ed2b5;
+$notice-color               : #243c31;
+$success-color              : #8fd7a7;
+$warning-color              : #dfbd73;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Dark theme for the site */
+html[data-theme="dark"] {
+  --global-base-color                 : #{$primary-color};
+  --global-bg-color                   : #{$background};
+  --global-footer-bg-color            : #{$footer};
+  --global-border-color               : #{$border};
+  --global-dark-border-color          : #{$border-light};
+  --global-code-background-color      : #{$background-light};
+  --global-code-text-color            : #{$text-muted};
+  --global-fig-caption-color          : #{$text-muted};
+  --global-link-color                 : #{$link};
+  --global-link-color-hover           : #{$link-dark};
+  --global-link-color-visited         : #{$link-light};
+  --global-masthead-link-color        : #{$text};
+  --global-masthead-link-color-hover  : #{$primary-color};
+  --global-text-color                 : #{$text};
+  --global-text-color-light           : #{$text-muted};
+  --global-thead-color                : #{$background-lighter};
+}
+
+html[data-theme="dark"] {
+  footer {
+    color: #{$text};
+  }
+
+  .welcome-note {
+    background: #{$background-lighter};
+    border-color: #{$border};
+    border-left-color: #{$primary-color};
+  }
+
+  .welcome-note summary,
+  .welcome-note p {
+    color: #{$text};
+  }
+
+  .publication-card {
+    background: #{$background-light};
+    border-color: #{$border};
+    border-left-color: #{$primary-color};
+  }
+
+  .publication-card__image img {
+    border-color: #{$border};
+  }
+
+  .publication-card__meta {
+    color: #{$primary-color};
+  }
+
+  .publication-card__description {
+    color: #{$text};
+    background: #{$background-lighter};
+    border-color: #{$border-light};
+    border-left-color: #{$primary-color};
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.24);
+  }
+
+  .publication-card__authors,
+  .pub-intro {
+    color: #{$text-muted};
+  }
+}

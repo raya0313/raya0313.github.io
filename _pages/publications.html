@@ -5,32 +5,157 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<div class="publication-list">
 
+  <article class="publication-card publication-card--featured">
+    <div class="publication-card__image">
+      <img src="{{ base_path }}/images/publications/handwriting-vr-figure.png" alt="VR handwriting study figure">
+    </div>
+    <div class="publication-card__body">
+      <p class="publication-card__meta">TVCG / ISMAR 2026 - Accepted</p>
+      <h2>
+        <span class="publication-card__title" tabindex="0">
+          Effects of Spatial Constraint on Bare-Hand Logographic Character Handwriting Performance in Virtual Reality
+          <span class="publication-card__description">Studies how spatial constraints shape bare-hand logographic character handwriting in VR, with implications for designing text input spaces that balance movement comfort and writing performance.</span>
+        </span>
+      </h2>
+      <p class="publication-card__authors"><strong>X. Cheng</strong>, Y. Zhang, Y. Wei, R. Jiang, P. Hansen, H.N. Liang</p>
+    </div>
+  </article>
 
+  <article class="publication-card publication-card--featured">
+    <div class="publication-card__image">
+      <img src="{{ base_path }}/images/publications/teleport-figure.png" alt="VR teleportation gesture study figure">
+    </div>
+    <div class="publication-card__body">
+      <p class="publication-card__meta">TVCG / IEEE VR 2026</p>
+      <h2>
+        <a class="publication-card__title" href="https://doi.org/10.1109/TVCG.2026.3679138">
+          Reorienting with the Bare Hand: Gesture-Based Techniques for Orientation-Enabled Teleportation in Virtual Reality
+          <span class="publication-card__description">Compares bare-hand gestures for specifying orientation during VR teleportation, asking how users can move and reorient without relying on controllers.</span>
+        </a>
+      </h2>
+      <p class="publication-card__authors">Y. Wei, <strong>X. Cheng</strong>, R. Shi, H.N. Liang</p>
+      <p class="publication-card__links"><a href="https://doi.org/10.1109/TVCG.2026.3679138">Paper</a> · <a href="https://www.youtube.com/watch?v=RG0xJVYTqf8">Video</a></p>
+    </div>
+  </article>
 
+  <article class="publication-card publication-card--featured">
+    <div class="publication-card__image">
+      <img src="{{ base_path }}/images/publications/blv-social-vr-figure.png" alt="Mixed-ability social VR workshop figure">
+    </div>
+    <div class="publication-card__body">
+      <p class="publication-card__meta">CSCW 2026 - Poster - Accepted</p>
+      <h2>
+        <span class="publication-card__title" tabindex="0">
+          Private Non-Visual Addressivity Cues for Blind and Low Vision Users in Mixed-Ability Social VR
+          <span class="publication-card__description">Explores how social VR can privately communicate who is being addressed, supporting blind and low vision users without making access cues awkwardly public.</span>
+        </span>
+      </h2>
+      <p class="publication-card__authors">Z. Zhang, Y. Zhang, <strong>X. Cheng</strong>*</p>
+    </div>
+  </article>
+
+  <article class="publication-card publication-card--featured">
+    <div class="publication-card__image">
+      <img src="{{ base_path }}/images/publications/pinyin-vr-workshop-figure.png" alt="Chinese Pinyin input in VR interface figure">
+    </div>
+    <div class="publication-card__body">
+      <p class="publication-card__meta">AHIMR / ISMAR 2026 - Workshop - Accepted</p>
+      <h2>
+        <span class="publication-card__title" tabindex="0">
+          Toward AI-Mediated Candidate Delivery for Chinese Pinyin Input in Virtual Reality
+          <span class="publication-card__description">Investigates how AI-mediated candidate delivery may reduce selection burden during Chinese Pinyin input in VR, where attention, hand movement, and text choice all compete.</span>
+        </span>
+      </h2>
+      <p class="publication-card__authors"><strong>X. Cheng</strong>, Y. Wei, H.N. Liang</p>
+    </div>
+  </article>
+
+  <article class="publication-card publication-card--featured">
+    <div class="publication-card__image">
+      <img src="{{ base_path }}/images/publications/ecscw-danmaku-interface.png" alt="Danmaku credibility assessment interface">
+    </div>
+    <div class="publication-card__body">
+      <p class="publication-card__meta">ECSCW 2026 - Poster</p>
+      <h2>
+        <a class="publication-card__title" href="https://doi.org/10.48340/ecscw2026_139">
+          Negative Danmaku as Social Warning Cues in Video Credibility Assessment
+          <span class="publication-card__description">Looks at whether negative danmaku comments can function as lightweight social warning cues when viewers judge the credibility of video content.</span>
+        </a>
+      </h2>
+      <p class="publication-card__authors"><strong>X. Cheng</strong>, Y. Zhang, Y. Qiao, P. Hansen, R. Jiang</p>
+      <p class="publication-card__links"><a href="https://doi.org/10.48340/ecscw2026_139">Paper</a></p>
+    </div>
+  </article>
+
+  <article class="publication-card publication-card--featured">
+    <div class="publication-card__image">
+      <img src="{{ base_path }}/images/publications/xr-read-figure.png" alt="XR reading clarity study figure">
+    </div>
+    <div class="publication-card__body">
+      <p class="publication-card__meta">Under Review</p>
+      <h2>
+        <a class="publication-card__title" href="https://arxiv.org/abs/2601.02829">
+          XR-Read: Eye-Level Clarity Matters for Sustained Reading in Head-Mounted Displays
+          <span class="publication-card__description">Examines how text position and eye-level clarity affect sustained reading in head-mounted displays, turning a subtle display issue into a measurable reading experience problem.</span>
+        </a>
+      </h2>
+      <p class="publication-card__authors">J. Wang, <strong>X. Cheng</strong>, B. Hou, H.N. Liang</p>
+      <p class="publication-card__links"><a href="https://arxiv.org/abs/2601.02829">arXiv</a></p>
+    </div>
+  </article>
+
+  <article class="publication-card publication-card--featured">
+    <div class="publication-card__image">
+      <img src="{{ base_path }}/images/publications/flowwalk-figure.png" alt="FlowWalk AR mindful walking figure">
+    </div>
+    <div class="publication-card__body">
+      <p class="publication-card__meta">UbiComp / ISWC 2026 - Poster &amp; Demo - Accepted</p>
+      <h2>
+        <span class="publication-card__title" tabindex="0">
+          FlowWalk: AR Guided Outdoor Mindful Walking with Photo Capture Based Nature Awareness
+          <span class="publication-card__description">Presents an AR-guided mindful walking experience that uses photo capture to help people notice outdoor nature more deliberately during everyday movement.</span>
+        </span>
+      </h2>
+      <p class="publication-card__authors">Z. Li, K. Huang, H. Tang, <strong>X. Cheng</strong>, H. Li, S. Zhao, P. An</p>
+    </div>
+  </article>
+
+  <article class="publication-card publication-card--featured">
+    <div class="publication-card__image">
+      <img src="{{ base_path }}/images/publications/hcii-ai-echo-figure.png" alt="AI-Echo interactive art figure">
+    </div>
+    <div class="publication-card__body">
+      <p class="publication-card__meta">HCII 2025</p>
+      <h2>
+        <a class="publication-card__title" href="https://doi.org/10.1007/978-3-031-93712-5_8">
+          AI-Echo: Exploring Technological Alienation Through an Interactive Art Experience
+          <span class="publication-card__description">Uses an interactive art experience to make technological alienation visible, inviting participants to encounter AI mediation as something felt rather than only explained.</span>
+        </a>
+      </h2>
+      <p class="publication-card__authors">Y. Zhang, <strong>X. Cheng</strong>, J. Yan</p>
+      <p class="publication-card__links"><a href="https://doi.org/10.1007/978-3-031-93712-5_8">Paper</a></p>
+    </div>
+  </article>
+
+  <article class="publication-card publication-card--featured">
+    <div class="publication-card__image">
+      <img src="{{ base_path }}/images/publications/serious-games-english-diagram.png" alt="Serious games and inclusive education diagram">
+    </div>
+    <div class="publication-card__body">
+      <p class="publication-card__meta">Game Industry Blue Book - 2025</p>
+      <h2>
+        <a class="publication-card__title" href="https://cpms.ssap.com.cn/skwx_cmr/initDatabaseDetail?siteId=23&amp;contentId=8400683&amp;contentType=literature">
+          The Application of Serious Games in Inclusive Education
+          <span class="publication-card__description">Reviews how serious games can support inclusive education by connecting playful interaction, multimodal access, and learning participation.</span>
+        </a>
+      </h2>
+      <p class="publication-card__authors">R. Jiang, S. Zhang, Y. Zhao, <strong>X. Cheng</strong></p>
+      <p class="publication-card__links"><a href="https://cpms.ssap.com.cn/skwx_cmr/initDatabaseDetail?siteId=23&amp;contentId=8400683&amp;contentType=literature">Publisher page</a></p>
+    </div>
+  </article>
+
+</div>

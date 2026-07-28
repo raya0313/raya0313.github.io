@@ -1,0 +1,221 @@
+/* ==========================================================================
+  RAYA GREEN THEME - LIGHT VERSION
+  Minimal color-only refresh for the existing Academic Pages layout.
+  ========================================================================== */
+
+/* Color codes used for the theme */
+$primary-color              : #2f7d5c;
+$dark-primary-color         : #245f47;
+$darker-primary-color       : #183f31;
+$light-primary-color        : #93c7a9;
+$lighter-primary-color      : #edf7f1;
+$background                 : #f6faf7;
+$background-light           : #ffffff;
+$background-lighter         : #fbfdfb;
+$text                       : #263b34;
+$text-muted                 : #667a70;
+$link                       : #26795a;
+$link-dark                  : #185640;
+$link-light                 : #57a17f;
+$footer                     : #dcefe5;
+$border                     : #d7e7dd;
+$border-dark                : #a8c8b6;
+
+/* Color codes used for the site */
+$danger-color               : #c25b4b;
+$info-color                 : #2f7d5c;
+$notice-color               : #dcefe5;
+$success-color              : #2f9c67;
+$warning-color              : #c49035;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(24, 63, 49, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Light theme for the site */
+:root {
+  --global-base-color                 : #{$primary-color};
+  --global-bg-color                   : #{$background};
+  --global-footer-bg-color            : #{$footer};
+  --global-border-color               : #{$border};
+  --global-dark-border-color          : #{$border-dark};
+  --global-code-background-color      : #{$background-light};
+  --global-code-text-color            : #{$darker-primary-color};
+  --global-fig-caption-color          : #{$text-muted};
+  --global-link-color                 : #{$link};
+  --global-link-color-hover           : #{$link-dark};
+  --global-link-color-visited         : #{$link-light};
+  --global-masthead-link-color        : #{$text};
+  --global-masthead-link-color-hover  : #{$primary-color};
+  --global-text-color                 : #{$text};
+  --global-text-color-light           : #{$text-muted};
+  --global-thead-color                : #{$lighter-primary-color};
+}
+
+footer {
+  color: #{$text};
+}
+
+.welcome-note {
+  margin: 1.25em 0 1.5em;
+  padding: 0.85em 1em;
+  background: #{$lighter-primary-color};
+  border: 1px solid #{$border};
+  border-left: 4px solid #{$primary-color};
+  border-radius: $border-radius;
+}
+
+.welcome-note summary {
+  color: #{$darker-primary-color};
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.welcome-note p {
+  margin: 0.85em 0 0;
+  color: #{$text};
+}
+
+.pub-intro {
+  color: #{$text-muted};
+}
+
+.publication-list {
+  display: grid;
+  gap: 1.25em;
+  margin-top: 1.5em;
+}
+
+.publication-card {
+  display: grid;
+  gap: 1em;
+  padding: 1em;
+  background: #{$background-light};
+  border: 1px solid #{$border};
+  border-left: 4px solid #{$primary-color};
+  border-radius: $border-radius;
+}
+
+.publication-card--featured {
+  @media (min-width: 720px) {
+    grid-template-columns: 240px 1fr;
+  }
+}
+
+.publication-card__body {
+  min-width: 0;
+}
+
+.publication-card__image img {
+  width: 100%;
+  height: 135px;
+  object-fit: contain;
+  object-position: center;
+  background: #fff;
+  border: 1px solid #{$border};
+  border-radius: $border-radius;
+}
+
+.publication-card__meta {
+  margin: 0 0 0.25em;
+  color: #{$primary-color};
+  font-size: $type-size-6;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.publication-card h2 {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0.35em;
+  padding-bottom: 0;
+  border-bottom: 0;
+  font-size: $type-size-4;
+}
+
+.publication-card__title {
+  cursor: help;
+}
+
+.publication-card__description {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.45em);
+  width: min(34rem, 88vw);
+  padding: 0.75em 0.85em;
+  color: #{$text};
+  background: #{$lighter-primary-color};
+  border: 1px solid #{$border-dark};
+  border-left: 4px solid #{$primary-color};
+  border-radius: $border-radius;
+  box-shadow: 0 6px 18px rgba(24, 63, 49, 0.12);
+  font-size: $type-size-6;
+  font-weight: 400;
+  line-height: 1.55;
+  z-index: 30;
+}
+
+.publication-card__title:hover .publication-card__description,
+.publication-card__title:focus-within .publication-card__description {
+  display: block;
+}
+
+.publication-card__authors {
+  color: #{$text-muted};
+}
+
+.publication-card__links {
+  margin-bottom: 0;
+  font-size: $type-size-6;
+}
+
+.publication-list--simple {
+  display: block;
+  margin-top: 1.25em;
+}
+
+.publication-item {
+  padding: 0.95em 0 0.95em 1em;
+  border-left: 3px solid #{$primary-color};
+  border-bottom: 1px solid #{$border};
+}
+
+.publication-item:first-child {
+  border-top: 1px solid #{$border};
+}
+
+.publication-item__venue {
+  margin: 0 0 0.25em;
+  color: #{$primary-color};
+  font-size: $type-size-6;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+
+.publication-item h2 {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+  padding-bottom: 0;
+  border-bottom: 0;
+  font-size: $type-size-4;
+  line-height: 1.25;
+}
+
+.publication-item__authors {
+  margin: 0.15em 0;
+  color: #{$text-muted};
+}
+
+.publication-item__links {
+  margin: 0.35em 0 0;
+  font-size: $type-size-6;
+}

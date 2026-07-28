@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default"
+site_theme               : "raya_green"
 title                    : "Xinru Cheng"
 title_separator          : "-"
 name                     : &name "Xinru Cheng"
@@ -49,7 +49,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : 
+  github           : raya0313
   kaggle           : # Username  
   stackoverflow    :   
 
