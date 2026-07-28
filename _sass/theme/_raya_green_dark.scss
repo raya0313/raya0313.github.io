@@ -59,6 +59,10 @@ html[data-theme="dark"] {
     color: #{$text};
   }
 
+  .page__footer {
+    display: none;
+  }
+
   .welcome-note {
     background: #{$background-lighter};
     border-color: #{$border};
@@ -93,6 +97,7 @@ html[data-theme="dark"] {
   }
 
   .publication-card__authors,
+  .publication-card__summary,
   .pub-intro {
     color: #{$text-muted};
   }
