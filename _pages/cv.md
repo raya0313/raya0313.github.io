@@ -5,6 +5,6 @@ title: "Curriculum Vitae"
 author_profile: true
 ---
 
-You can download my latest CV: [Xinru Cheng — Curriculum Vitae](/files/cv.pdf?v=20260720-2).
+You can download my latest CV: [Xinru Cheng - Curriculum Vitae](/files/cv.pdf?v=20260728-1).
 
-_Last updated: July 20, 2026._
+_Last updated: July 28, 2026._
