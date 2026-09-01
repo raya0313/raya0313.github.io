@@ -151,6 +151,24 @@ author_profile: false
   </article>
 
   
+  <article class="publication-card publication-card--featured">
+    <div class="publication-card__image">
+      <img src="{{ base_path }}/images/publications/isdg-net-figure9.png" alt="ISDG-Net RGB-infrared remote sensing detection results">
+    </div>
+    <div class="publication-card__body">
+      <p class="publication-card__meta">Remote Sensing 2026</p>
+      <h2>
+        <a class="publication-card__title" href="https://doi.org/10.3390/rs18101570">
+          ISDG-Net: Efficient RGB-Infrared Object Detection for Remote Sensing Imagery
+          <span class="publication-card__description">A lightweight RGB-infrared detector for difficult remote-sensing scenes, where optical and thermal cues work together to find small objects under low visibility.</span>
+        </a>
+      </h2>
+      <p class="publication-card__authors">Y. Gao, <strong>X. Cheng</strong>, Y. Li, D. Xu, D. Sun, Y. Hu</p>
+      <p class="publication-card__summary"><strong>Abstract.</strong> In all-weather Earth observation and complex unstructured environments, traditional single-modal remote sensing object detection often fails due to low illumination and strong background interference. While RGB-infrared fusion provides complementary information, existing methods are typically computationally intensive and struggle with dense small objects and modality discrepancies, limiting their deployment on resource-constrained platforms. To address these challenges, we propose ISDG-Net, a lightweight and efficient visible-infrared dual-modal object detection framework specifically tailored for edge deployment. ISDG-Net integrates four core components: (1) a channel-separated inverted bottleneck backbone (IBC-Conv) that reduces parameter redundancy while preserving modality-specific semantics; (2) a dynamic sparse attention module (DySparse) based on Bi-Level Routing Attention, enabling long-range dependency modeling with low computational cost; (3) an adaptive spatial fusion detection head (Detect-SASD) that aligns visible and infrared features at the pixel level to resolve semantic inconsistency and scale mismatch; and (4) a geometry-aware IoU selector (GIS) that mitigates over-suppression in crowded scenes by incorporating multi-dimensional geometric constraints into post-processing. Extensive experiments on the VEDAI, M3FD, and LLVIP datasets demonstrate the effectiveness and efficiency of ISDG-Net. It achieves 55.1% and 77.1% mAP@0.5 on VEDAI and M3FD, respectively, and 93.7% mAP@0.5 with 89.7% recall on LLVIP, while maintaining a compact model size of 4.2 M parameters and 11.3 GFLOPs. These results validate that accurate RGB-infrared detection is achievable under strict resource constraints, making ISDG-Net well-suited for deployment in edge-based remote sensing systems.</p>
+      <p class="publication-card__links"><a href="https://doi.org/10.3390/rs18101570">Paper</a></p>
+    </div>
+  </article>
+
 
   <article class="publication-card publication-card--featured">
     <div class="publication-card__image">
