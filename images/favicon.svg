@@ -1,26 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
   <title id="title">Raya cat icon</title>
-  <desc id="desc">A warm minimalist Abyssinian cat face icon for Xinru Cheng's personal website.</desc>
-  <circle cx="256" cy="256" r="236" fill="#F7F0E3"/>
-  <path d="M145 210 115 82l105 82Z" fill="#C66F2C"/>
-  <path d="M367 210 397 82l-105 82Z" fill="#C66F2C"/>
-  <path d="M151 201 133 112l72 61Z" fill="#F0B46E"/>
-  <path d="M361 201 379 112l-72 61Z" fill="#F0B46E"/>
-  <path d="M256 116c-87 0-151 63-151 151 0 92 67 164 151 164s151-72 151-164c0-88-64-151-151-151Z" fill="#B96528"/>
-  <path d="M256 116c-31 38-49 82-49 139 0 74 20 133 49 176 29-43 49-102 49-176 0-57-18-101-49-139Z" fill="#C97835" opacity=".88"/>
-  <path d="M187 207c22-18 50-28 69-28s47 10 69 28c-23-8-46-12-69-12s-46 4-69 12Z" fill="#7A3B1E" opacity=".5"/>
-  <ellipse cx="198" cy="266" rx="37" ry="30" fill="#F4C46B"/>
-  <ellipse cx="314" cy="266" rx="37" ry="30" fill="#F4C46B"/>
-  <ellipse cx="198" cy="266" rx="14" ry="24" fill="#163D2B"/>
-  <ellipse cx="314" cy="266" rx="14" ry="24" fill="#163D2B"/>
-  <circle cx="205" cy="256" r="5" fill="#FFFFFF"/>
-  <circle cx="321" cy="256" r="5" fill="#FFFFFF"/>
-  <path d="M238 319c6-9 30-9 36 0-4 10-13 17-18 17s-14-7-18-17Z" fill="#5B2A1A"/>
-  <path d="M256 337c-10 18-29 24-52 18" fill="none" stroke="#6D321B" stroke-width="10" stroke-linecap="round"/>
-  <path d="M256 337c10 18 29 24 52 18" fill="none" stroke="#6D321B" stroke-width="10" stroke-linecap="round"/>
-  <path d="M229 307c-24-13-55-17-91-12" fill="none" stroke="#F3D7A6" stroke-width="8" stroke-linecap="round"/>
-  <path d="M227 326c-31 0-60 8-87 24" fill="none" stroke="#F3D7A6" stroke-width="8" stroke-linecap="round"/>
-  <path d="M283 307c24-13 55-17 91-12" fill="none" stroke="#F3D7A6" stroke-width="8" stroke-linecap="round"/>
-  <path d="M285 326c31 0 60 8 87 24" fill="none" stroke="#F3D7A6" stroke-width="8" stroke-linecap="round"/>
-  <path d="M165 188c20-22 50-40 91-40s71 18 91 40" fill="none" stroke="#8F451F" stroke-width="12" stroke-linecap="round" opacity=".45"/>
+  <desc id="desc">A simple high-contrast Abyssinian cat face icon for Xinru Cheng's personal website.</desc>
+  <rect width="512" height="512" rx="104" fill="#FFF7E8"/>
+  <path d="M100 210 78 55l126 103Z" fill="#C86928" stroke="#4A2415" stroke-width="22" stroke-linejoin="round"/>
+  <path d="M412 210 434 55 308 158Z" fill="#C86928" stroke="#4A2415" stroke-width="22" stroke-linejoin="round"/>
+  <path d="M121 182 108 104l66 54Z" fill="#F1B56A"/>
+  <path d="M391 182 404 104l-66 54Z" fill="#F1B56A"/>
+  <path d="M256 95c-97 0-176 72-176 174 0 113 84 199 176 199s176-86 176-199C432 167 353 95 256 95Z" fill="#C86928" stroke="#4A2415" stroke-width="24"/>
+  <path d="M256 112c-30 42-47 90-47 151 0 83 19 151 47 200 28-49 47-117 47-200 0-61-17-109-47-151Z" fill="#D98135"/>
+  <path d="M212 185c18-21 70-21 88 0" fill="none" stroke="#733417" stroke-width="18" stroke-linecap="round"/>
+  <path d="M256 128v70M226 139l18 62M286 139l-18 62" fill="none" stroke="#733417" stroke-width="15" stroke-linecap="round"/>
+  <ellipse cx="185" cy="262" rx="43" ry="52" fill="#FFE08A" stroke="#4A2415" stroke-width="13"/>
+  <ellipse cx="327" cy="262" rx="43" ry="52" fill="#FFE08A" stroke="#4A2415" stroke-width="13"/>
+  <ellipse cx="185" cy="262" rx="15" ry="33" fill="#0B3B2C"/>
+  <ellipse cx="327" cy="262" rx="15" ry="33" fill="#0B3B2C"/>
+  <circle cx="196" cy="244" r="8" fill="#FFFFFF"/>
+  <circle cx="338" cy="244" r="8" fill="#FFFFFF"/>
+  <path d="M206 332c22-20 78-20 100 0 0 46-100 46-100 0Z" fill="#F1B56A"/>
+  <path d="M236 324h40l-20 24Z" fill="#3C1C12"/>
+  <path d="M256 348v19" stroke="#3C1C12" stroke-width="12" stroke-linecap="round"/>
+  <path d="M256 367c-19 23-54 17-70 1M256 367c19 23 54 17 70 1" fill="none" stroke="#3C1C12" stroke-width="12" stroke-linecap="round"/>
+  <path d="M218 322c-45-16-88-18-126-9M218 348c-45 0-86 11-123 33M294 322c45-16 88-18 126-9M294 348c45 0 86 11 123 33" fill="none" stroke="#FFF1CB" stroke-width="12" stroke-linecap="round"/>
 </svg>
